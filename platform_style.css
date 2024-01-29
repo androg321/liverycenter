@@ -1,0 +1,234 @@
+@import "./font/noto-sans-korean.css";
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Noto Sans Korean", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: rgba(243, 243, 243, 0.744);
+}
+
+header {
+  display: flex;
+  background-color: white;
+  padding: 0 11%;
+  width: 100%;
+  height: 110px;
+  justify-content: left;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(146, 146, 146, 0.763);
+}
+
+header a {
+  text-decoration-line: none;
+  font-size: 2em;
+  padding-top: 20px;
+}
+
+header p {
+  font-size: 1em;
+}
+
+.container {
+  display: flex;
+  height: 1000px;
+  margin: 0 10%;
+  gap: 3%;
+  /* position: relative; */
+}
+
+aside {
+  width: 25%;
+  height: 50%;
+  margin-top: 10%;
+  border: none;
+  box-shadow: 0 0 10px rgba(146, 146, 146, 0.763);
+  border-radius: 10px;
+  background-color: white;
+}
+
+.main {
+  display: block;
+  /* grid-template-columns: 50% 50%;
+  grid-template-rows: 310px 250px 250px 250px 250px; */
+  width: 80%;
+  margin-top: 10%;
+  border: none;
+  box-shadow: 0 0 10px rgba(146, 146, 146, 0.763);
+  border-radius: 10px;
+  background-color: white;
+}
+
+.side li {
+  list-style-type: none;
+  color: rgb(143, 143, 143);
+  border-bottom: 1px solid white;
+  padding-bottom: 5%;
+  font-weight: 200;
+  cursor: pointer;
+}
+
+.side li:hover {
+  color: black;
+  border-bottom: 1px solid black;
+}
+
+.aftlist {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  border: 1px solid rgb(216, 216, 216);
+  border-radius: 15px;
+}
+
+.aftlist:hover {
+  border: 1px solid rgb(69, 158, 194);
+  background-color: rgb(69, 158, 194);
+  box-shadow: 0 0 10px rgba(146, 146, 146, 0.763);
+  transition: all 0.3s;
+  cursor: pointer;
+  color: white;
+}
+
+.aftlist img {
+  width: 40%;
+  border-radius: 10px;
+  margin: 2%;
+}
+
+.aftlist-info {
+  display: block;
+  padding-left: 5%;
+  justify-content: flex-start;
+}
+
+.aftlist-info p {
+  width: auto;
+  font-size: 2rem;
+  font-weight: 200;
+  margin: 0 20px 0 0;
+}
+
+.aftlist-info h6 {
+  font-weight: 200;
+}
+
+.aftlist-info .virtual {
+  background-color: rgb(92, 139, 129);
+  color: white;
+  font-size: 0.7em;
+  font-weight: 200;
+  border-radius: 7px;
+  padding: 3px;
+  margin-right: 75%;
+  text-align: center;
+}
+
+.aftlist-info .retro {
+  background-color: rgb(83, 87, 119);
+  color: white;
+  font-size: 0.7em;
+  font-weight: 200;
+  border-radius: 7px;
+  padding: 3px;
+  margin-right: 75%;
+  text-align: center;
+}
+
+.modal {
+  position: fixed;
+  display: none;
+
+  /* justify-content: center; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  right: 25%;
+  width: auto;
+  height: 500px;
+  padding: 40px;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(34, 36, 38, 0.15);
+
+  transform: translateY(-50%);
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.btn-close {
+  position: absolute;
+  top: 5%;
+  right: 3%;
+}
+
+.modal-content img {
+  position: absolute;
+  width: 40%;
+  top: 10%;
+  left: 5%;
+}
+
+.modal-content p {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  font-size: 1.7em;
+  font-weight: 500;
+}
+
+.modal-content h5 {
+  position: absolute;
+  top: 19%;
+  left: 50%;
+  font-size: 1em;
+  font-weight: 200;
+}
+
+.modal-content span {
+  position: absolute;
+  top: 4%;
+  right: 3%;
+}
+
+.download {
+  position: absolute;
+  bottom: 10%;
+  right: 5%;
+  width: 30%;
+  height: 10%;
+  border-radius: 30px;
+  background-color: white;
+  color: rgb(69, 158, 194);
+  border: 2px solid rgb(69, 158, 194);
+}
+
+.download:hover {
+  background-color: rgb(69, 158, 194);
+  color: white;
+  border: 2px solid rgb(69, 158, 194);
+}
