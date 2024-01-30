@@ -138,3 +138,11 @@ footer {
   height: 200px;
   background-color: rgb(199, 199, 199);
 }
+
+.footer-wrap {
+  display: flex;
+  padding-left: 10%;
+  padding-top: 5%;
+  color: rgb(132, 132, 132);
+  font-weight: 200;
+}
