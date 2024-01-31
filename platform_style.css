@@ -64,7 +64,7 @@ header p {
 aside {
   width: 25%;
   height: 50%;
-  margin-top: 10%;
+  margin-top: 5%;
   border: none;
   box-shadow: 0 0 10px rgba(146, 146, 146, 0.763);
   border-radius: 10px;
@@ -72,15 +72,41 @@ aside {
 }
 
 .main {
-  display: block;
-  /* grid-template-columns: 50% 50%;
-  grid-template-rows: 310px 250px 250px 250px 250px; */
-  width: 80%;
-  margin-top: 10%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  width: 90%;
+  margin-top: 5%;
   border: none;
   box-shadow: 0 0 10px rgba(146, 146, 146, 0.763);
   border-radius: 10px;
   background-color: white;
+}
+
+.custom-tooltip {
+  --bs-tooltip-bg: var(--bs-primary);
+}
+
+#floating-btn {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  display: flex;
+  padding: 19px 0 19px 21px;
+  align-items: center;
+  text-align: center;
+  left: 93%; /*부모의 50%*/
+  bottom: 100px;
+  background-color: rgb(69, 158, 194);
+  border-radius: 100px;
+  border: none;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  gap: 8px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(146, 146, 146, 0.811);
 }
 
 .side li {
@@ -98,7 +124,7 @@ aside {
 }
 
 .aftlist {
-  display: flex;
+  display: block;
   align-items: center;
   margin: 20px;
   border: 1px solid rgb(216, 216, 216);
@@ -115,7 +141,7 @@ aside {
 }
 
 .aftlist img {
-  width: 40%;
+  width: 96%;
   border-radius: 10px;
   margin: 2%;
 }
@@ -128,13 +154,14 @@ aside {
 
 .aftlist-info p {
   width: auto;
-  font-size: 2rem;
+  font-size: 1.2rem;
   font-weight: 200;
   margin: 0 20px 0 0;
 }
 
 .aftlist-info h6 {
-  font-weight: 200;
+  font-weight: 100;
+  font-size: 0.8em;
 }
 
 .aftlist-info .virtual {
@@ -251,8 +278,4 @@ aside {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.footer-wrap p {
-  width: 2%;
 }

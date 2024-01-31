@@ -114,6 +114,20 @@
         </div>
       </aside>
       <div class="main">
+        <!-- 플로팅 버튼 -->
+        <!-- <button
+          onclick="openModal('modal0')"
+          class="btn btn-secondary"
+          type="button"
+          id="floating-btn"
+          data-bs-toggle="tooltip"
+          data-bs-placement="top"
+          data-bs-custom-class="custom-tooltip"
+          data-bs-title="리버리 적용법"
+        >
+          ?
+        </button> -->
+        <!-- 리버리 리스트 -->
         <div class="aftlist" onclick="openModal('modal1')">
           <img src="./img/hl8222.png" alt="hl8222" />
           <div class="aftlist-info">
@@ -123,6 +137,22 @@
         </div>
       </div>
       <!-- 모달 창 -->
+      <div id="modal0" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal0')">&times;</span>
+          <img src="./img/hl8222.png" alt="hl8222" />
+          <p>Korean Air B737-700 HL8222</p>
+          <h5>by Dbstjrr</h5>
+          <button
+            class="download"
+            type="button"
+            onclick="window.open('https://drive.google.com/file/d/1JeO9xiOYFO0IEj7TevRtsHW2Wz1dUdW3/view')"
+          >
+            DOWNLOAD
+          </button>
+        </div>
+      </div>
+
       <div id="modal1" class="modal">
         <div class="modal-content">
           <span class="close" onclick="closeModal('modal1')">&times;</span>
@@ -160,6 +190,14 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
+    <script>
+      const tooltipTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="tooltip"]'
+      );
+      const tooltipList = [...tooltipTriggerList].map(
+        (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+      );
+    </script>
     <script>
       function openModal(modalId) {
         var modal = document.getElementById(modalId);
