@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/platform_style.css" />
+    <link rel="stylesheet" href="../font/_fonts.scss" />
+    <title>FS Livery Download Center - MSFS2020</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <a href="./index.html">FS Livery Center</a>
+        <p>PMDG B737-800</p>
+      </div>
+      <div class="platform-nav">
+        <p href="./msfs738.html" style="color: rgb(69, 158, 194)">MSFS2020</p>
+        <p href="">P3D</p>
+        <p href="">X-Plane</p>
+      </div>
+    </header>
+    <div class="container">
+      <aside>
+        <div class="side">
+          <div
+            class="accordion accordion-flush"
+            id="accordionFlushExample"
+            style="margin-top: 5%"
+          >
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseOne"
+                >
+                  PMDG
+                </button>
+              </h2>
+              <div
+                id="flush-collapseOne"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  <ul>
+                    <li onclick="location.href='./msfs737.html'">B737-700</li>
+                    <li onclick="location.href='./msfs738.html'">B737-800</li>
+                    <li onclick="location.href='./msfs739.html'">B737-900</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseTwo"
+                >
+                  Fenix
+                </button>
+              </h2>
+              <div
+                id="flush-collapseTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  <ul>
+                    <li onclick="location.href='./fenix320.html'">A320</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseThree"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseThree"
+                >
+                  inibuilds
+                </button>
+              </h2>
+              <div
+                id="flush-collapseThree"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  <ul>
+                    <li onclick="location.href='./ini300.html'">A300</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseFour"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseFour"
+                >
+                  LVFR
+                </button>
+              </h2>
+              <div
+                id="flush-collapseFour"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  <ul>
+                    <li onclick="location.href='./lvfr21n.html'">A321 neo</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <div class="main">
+        <div class="main-container">
+          <div class="aftlist" onclick="openModal('modal1')">
+            <img src="../img/hl8355.png" alt="hl8355" />
+            <div class="aftlist-info">
+              <p>에어인천 HL8355</p>
+              <h6>Air Incheon HL8355</h6>
+            </div>
+          </div>
+          <div class="aftlist" onclick="openModal('modal2')">
+            <img src="../img/hl8240.png" alt="hl8240" />
+            <div class="aftlist-info">
+              <p>대한항공 HL8240</p>
+              <h6>Korean Air HL8240</h6>
+            </div>
+          </div>
+          <div class="aftlist" onclick="openModal('modal3')">
+            <img src="../img/hl7560.png" alt="hl7560" />
+            <div class="aftlist-info">
+              <p>대한항공 HL7560</p>
+              <h6>Korean Air HL7560</h6>
+            </div>
+          </div>
+          <div class="aftlist" onclick="openModal('modal4')">
+            <img src="../img/hl7757.png" alt="hl7757" />
+            <div class="aftlist-info">
+              <p>진에어 HL7757</p>
+              <h6>Jin Air HL7757</h6>
+            </div>
+          </div>
+          <div class="aftlist" onclick="openModal('modal5')">
+            <img src="../img/hl8012.png" alt="hl8012" />
+            <div class="aftlist-info">
+              <p>진에어 HL8012</p>
+              <h6>Jin Air HL8012</h6>
+            </div>
+          </div>
+          <div class="aftlist" onclick="openModal('modal6')">
+            <img src="../img/hl8015.png" alt="hl8015" />
+            <div class="aftlist-info">
+              <p>진에어 HL8015</p>
+              <h6>Jin Air HL8015</h6>
+            </div>
+          </div>
+          <div class="aftlist" onclick="openModal('modal7')">
+            <img src="../img/hl8242.png" alt="hl8242" />
+            <div class="aftlist-info">
+              <p>진에어 HL8242</p>
+              <h6>Jin Air HL8242</h6>
+            </div>
+          </div>
+          <div class="aftlist" onclick="openModal('modal8')">
+            <img src="../img/hl8243.png" alt="hl8243" />
+            <div class="aftlist-info">
+              <p>진에어 HL8243</p>
+              <h6>Jin Air HL8243</h6>
+            </div>
+          </div>
+          <div class="aftlist" onclick="openModal('modal9')">
+            <img src="../img/hl8244.png" alt="hl8244" />
+            <div class="aftlist-info">
+              <p>진에어 HL8244</p>
+              <h6>Jin Air HL8244</h6>
+            </div>
+          </div>
+          <div class="aftlist" onclick="openModal('modal10')">
+            <img src="../img/hl8245.png" alt="hl8245" />
+            <div class="aftlist-info">
+              <p>진에어 HL8245</p>
+              <h6>Jin Air HL8245</h6>
+            </div>
+          </div>
+          <div class="aftlist" onclick="openModal('modal11')">
+            <img src="../img/hl8246.png" alt="hl8246" />
+            <div class="aftlist-info">
+              <p>진에어 HL8246</p>
+              <h6>Jin Air HL8246</h6>
+            </div>
+          </div>
+          <div class="aftlist" onclick="openModal('modal12')">
+            <img src="../img/hl8247.png" alt="hl8247" />
+            <div class="aftlist-info">
+              <p>진에어 HL8247</p>
+              <h6>Jin Air HL8247</h6>
+            </div>
+          </div>
+          <div class="aftlist" onclick="openModal('modal13')">
+            <img src="../img/hl8295.png" alt="hl8295" />
+            <div class="aftlist-info">
+              <p>제주항공 HL8295</p>
+              <h6>Jeju Air HL8295</h6>
+            </div>
+          </div>
+          <div class="aftlist" onclick="openModal('modal14')">
+            <img src="../img/hl8260.png" alt="hl8260" />
+            <div class="aftlist-info">
+              <p>제주항공 HL8260</p>
+              <h6>Jeju Air HL8260</h6>
+            </div>
+          </div>
+          <div class="aftlist" onclick="openModal('modal15')">
+            <img src="../img/hl8316.png" alt="hl8316" />
+            <div class="aftlist-info">
+              <p>제주항공 HL8316</p>
+              <h6>Jeju Air HL8316</h6>
+            </div>
+          </div>
+          <div class="aftlist" onclick="openModal('modal16')">
+            <img src="../img/hl8539.png" alt="hl8539" />
+            <div class="aftlist-info">
+              <p>제주항공 HL8539</p>
+              <h6>Jeju Air HL8539</h6>
+            </div>
+          </div>
+          <div class="aftlist" onclick="openModal('modal17')">
+            <img src="../img/hl8336.png" alt="hl8336" />
+            <div class="aftlist-info">
+              <p>제주항공 HL8336</p>
+              <h6>Jeju Air HL8336</h6>
+            </div>
+          </div>
+          <div class="aftlist" onclick="openModal('modal18')">
+            <img src="../img/hl8322.png" alt="hl8322" />
+            <div class="aftlist-info">
+              <p>제주항공 HL8322</p>
+              <h6>Jeju Air HL8322</h6>
+            </div>
+          </div>
+          <div class="aftlist" onclick="openModal('modal19')">
+            <img src="../img/hl8087bts.png" alt="hl8087bts" />
+            <div class="aftlist-info">
+              <p>제주항공 HL8087</p>
+              <h6>Jeju Air HL8087</h6>
+            </div>
+          </div>
+          <div class="aftlist" onclick="openModal('modal20')">
+            <img src="../img/hl8087pk.png" alt="hl8087pk" />
+            <div class="aftlist-info">
+              <p>제주항공 HL8087</p>
+              <h6>Jeju Air HL8087</h6>
+            </div>
+          </div>
+        </div>
+        <div class="page">
+          <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item disabled">
+                <a
+                  class="page-link"
+                  href="./msfs738.html"
+                  aria-label="Previous"
+                >
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+              <li class="page-item">
+                <a class="page-link active" href="./msfs738.html">1</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="./msfs738p2.html">2</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="./msfs738p2.html" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- <div class="aftlist" onclick="openModal('modal')">
+          <img src="" alt="hlXXXX" />
+          <div class="aftlist-info">
+            <p class="aft-num">대한항공 HLXXXX</p>
+            <h6>Korean Air HLXXXX</h6>
+            <h5 class="virtual">VIRTUAL</h5>
+          </div>
+        </div>
+        <div class="aftlist" onclick="openModal('modal')">
+          <img src="" alt="hlXXXX" />
+          <div class="aftlist-info">
+            <p class="aft-num">대한항공 HLXXXX</p>
+            <h6>Korean Air HLXXXX</h6>
+            <h5 class="retro">RETRO</h5>
+          </div>
+        </div>
+      </div> -->
+        <!-- 모달 창 -->
+      </div>
+    </div>
+    <footer>
+      <div class="footer-wrap">
+        <p>contact: liverycenter@gmail.com</p>
+      </div>
+    </footer>
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal1')">&times;</span>
+        <img src="../img/hl8355.png" alt="hl8355" />
+        <p>Air Incheon B737-800 HL8355</p>
+        <h5>by Dbstjrr</h5>
+        <button
+          class="download"
+          type="button"
+          onclick="window.open('https://drive.google.com/file/d/1Vl-YNOD6EDDR_1BvWg6DwD1YM5vToygw/view')"
+        >
+          DOWNLOAD
+        </button>
+      </div>
+    </div>
+
+    <div id="modal2" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal2')">&times;</span>
+        <img src="../img/hl8240.png" alt="hl8240" />
+        <p>Korean Air B737-800 HL8240</p>
+        <h5>by Dbstjrr</h5>
+        <button
+          class="download"
+          type="button"
+          onclick="window.open('https://drive.google.com/file/d/1Z4izVMTvbeppxjoM9iiTMy-92pkudKuH/view')"
+        >
+          DOWNLOAD
+        </button>
+      </div>
+    </div>
+    <div id="modal3" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal3')">&times;</span>
+        <img src="../img/hl7560.png" alt="hl7560" />
+        <p>Korean Air B737-800 HL7560</p>
+        <h5>by Dbstjrr</h5>
+        <button
+          class="download"
+          type="button"
+          onclick="window.open('https://drive.google.com/file/d/1XkBOP61eTCmc3jWduP3mOEvJ5OOGALwF/view')"
+        >
+          DOWNLOAD
+        </button>
+      </div>
+    </div>
+    <div id="modal4" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal4')">&times;</span>
+        <img src="../img/hl7757.png" alt="hl7757" />
+        <p>Jin Air B737-800 HL7757</p>
+        <h5>by Dbstjrr</h5>
+        <button
+          class="download"
+          type="button"
+          onclick="window.open('https://drive.google.com/file/d/181UEK9vTuQYBZNwDsONCc4x7c9vzB99X/view')"
+        >
+          DOWNLOAD
+        </button>
+      </div>
+    </div>
+    <div id="modal5" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal5')">&times;</span>
+        <img src="../img/hl8012.png" alt="hl8012" />
+        <p>Jin Air B737-800 HL8012</p>
+        <h5>by Dbstjrr</h5>
+        <button
+          class="download"
+          type="button"
+          onclick="window.open('https://drive.google.com/file/d/1u79ANqcaf12mrhI5gW7Ko28nYVP5WhpN/view')"
+        >
+          DOWNLOAD
+        </button>
+      </div>
+    </div>
+    <div id="modal6" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal6')">&times;</span>
+        <img src="../img/hl8015.png" alt="hl8015" />
+        <p>Jin Air B737-800 HL8015</p>
+        <h5>by Dbstjrr</h5>
+        <button
+          class="download"
+          type="button"
+          onclick="window.open('https://drive.google.com/file/d/1Moh-405nXAGherdbCWR7_I84VUrYR_EU/view')"
+        >
+          DOWNLOAD
+        </button>
+      </div>
+    </div>
+    <div id="modal7" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal7')">&times;</span>
+        <img src="../img/hl8242.png" alt="hl8242" />
+        <p>Jin Air B737-800 HL8242</p>
+        <h5>by Dbstjrr</h5>
+        <button
+          class="download"
+          type="button"
+          onclick="window.open('https://drive.google.com/file/d/1MCkqYfRBkmTNslaCUrB-6vMqsqICPcbL/view')"
+        >
+          DOWNLOAD
+        </button>
+      </div>
+    </div>
+    <div id="modal8" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal8')">&times;</span>
+        <img src="../img/hl8243.png" alt="hl8243" />
+        <p>Jin Air B737-800 HL8243</p>
+        <h5>by Dbstjrr</h5>
+        <button
+          class="download"
+          type="button"
+          onclick="window.open('https://drive.google.com/file/d/1vv9ciFoTaWrgted8S3TwO9cwBSI1Q0er/view')"
+        >
+          DOWNLOAD
+        </button>
+      </div>
+    </div>
+    <div id="modal9" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal9')">&times;</span>
+        <img src="../img/hl8244.png" alt="hl8244" />
+        <p>Jin Air B737-800 HL8244</p>
+        <h5>by Dbstjrr</h5>
+        <button
+          class="download"
+          type="button"
+          onclick="window.open('https://drive.google.com/file/d/1qwMSfOYEPFrF885HzD7Y-_89p5KOF8sk/view')"
+        >
+          DOWNLOAD
+        </button>
+      </div>
+    </div>
+    <div id="modal10" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal10')">&times;</span>
+        <img src="../img/hl8245.png" alt="hl8245" />
+        <p>Jin Air B737-800 HL8245</p>
+        <h5>by Dbstjrr</h5>
+        <button
+          class="download"
+          type="button"
+          onclick="window.open('https://drive.google.com/file/d/183QoQ7NXPeYPQYUTKLUQ8u7mMaY1eMZv/view')"
+        >
+          DOWNLOAD
+        </button>
+      </div>
+    </div>
+    <div id="modal11" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal11')">&times;</span>
+        <img src="../img/hl8246.png" alt="hl8246" />
+        <p>Jin Air B737-800 HL8246</p>
+        <h5>by Dbstjrr</h5>
+        <button
+          class="download"
+          type="button"
+          onclick="window.open('https://drive.google.com/file/d/1TteyT11mnxw7kEk6INih3hENkAhxknaP/view')"
+        >
+          DOWNLOAD
+        </button>
+      </div>
+    </div>
+    <div id="modal12" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal12')">&times;</span>
+        <img src="../img/hl8247.png" alt="hl8247" />
+        <p>Jin Air B737-800 HL8247</p>
+        <h5>by Dbstjrr</h5>
+        <button
+          class="download"
+          type="button"
+          onclick="window.open('https://drive.google.com/file/d/1CG9iLYQv4DMhfa8qq2xnkpat5efEXveL/view')"
+        >
+          DOWNLOAD
+        </button>
+      </div>
+    </div>
+    <div id="modal13" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal13')">&times;</span>
+        <img src="../img/hl8295.png" alt="hl8295" />
+        <p>Jeju Air Cargo B737-800 HL8295</p>
+        <h5>by Dbstjrr</h5>
+        <button
+          class="download"
+          type="button"
+          onclick="window.open('https://drive.google.com/file/d/1wsMfQQaZWuxO3bOsXNhGXmeVkLy7Y-hj/view')"
+        >
+          DOWNLOAD
+        </button>
+      </div>
+    </div>
+    <div id="modal14" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal14')">&times;</span>
+        <img src="../img/hl8260.png" alt="hl8260" />
+        <p>JJeju Air B737-800 HL8260</p>
+        <h5>by Dbstjrr</h5>
+        <button
+          class="download"
+          type="button"
+          onclick="window.open('https://drive.google.com/file/d/1BJvFbwW3kXAGLwKXj70roHyiwWXhUSaa/view')"
+        >
+          DOWNLOAD
+        </button>
+      </div>
+    </div>
+    <div id="modal15" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal15')">&times;</span>
+        <img src="../img/hl8316.png" alt="hl8316" />
+        <p>Jeju Air B737-800 HL8316</p>
+        <h5>by Dbstjrr</h5>
+        <button
+          class="download"
+          type="button"
+          onclick="window.open('https://drive.google.com/file/d/1r6Uf9nsi78Jrf-a0V9A33XbO5HETwzsL/view')"
+        >
+          DOWNLOAD
+        </button>
+      </div>
+    </div>
+    <div id="modal16" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal16')">&times;</span>
+        <img src="../img/hl8539.png" alt="hl8539" />
+        <p>Jeju Air B737-800 HL8539</p>
+        <h5>by Dbstjrr</h5>
+        <button
+          class="download"
+          type="button"
+          onclick="window.open('https://drive.google.com/file/d/1Mh56OFtYG9jomU9tWRDL83SmNPAhO5uZ/view')"
+        >
+          DOWNLOAD
+        </button>
+      </div>
+    </div>
+    <div id="modal17" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal17')">&times;</span>
+        <img src="../img/hl8336.png" alt="hl8336" />
+        <p>Jeju Air B737-800 HL8336</p>
+        <h5>by Dbstjrr</h5>
+        <button
+          class="download"
+          type="button"
+          onclick="window.open('https://drive.google.com/file/d/1otQoS2peWI-PswWk3A4-kauYZDFz4oTV/view')"
+        >
+          DOWNLOAD
+        </button>
+      </div>
+    </div>
+    <div id="modal18" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal18')">&times;</span>
+        <img src="../img/hl8322.png" alt="hl8322" />
+        <p>Jeju Air B737-800 HL8322</p>
+        <h5>by Dbstjrr</h5>
+        <button
+          class="download"
+          type="button"
+          onclick="window.open('https://drive.google.com/file/d/1qRGK8-N2klCbKjjK8q1iLRxxsxExo1_r/view')"
+        >
+          DOWNLOAD
+        </button>
+      </div>
+    </div>
+    <div id="modal19" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal19')">&times;</span>
+        <img src="../img/hl8087bts.png" alt="hl8087" />
+        <p>Jeju Air B737-800 HL8087</p>
+        <h5>by Dbstjrr</h5>
+        <button
+          class="download"
+          type="button"
+          onclick="window.open('https://drive.google.com/file/d/16qKiNOfqWLjWLibWmfI6oCk2gQmqGbUJ/view')"
+        >
+          DOWNLOAD
+        </button>
+      </div>
+    </div>
+    <div id="modal20" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal20')">&times;</span>
+        <img src="../img/hl8087pk.png" alt="hl8087" />
+        <p>Jeju Air B737-800 HL8087</p>
+        <h5>by Dbstjrr</h5>
+        <button
+          class="download"
+          type="button"
+          onclick="window.open('https://drive.google.com/file/d/16J2ZFlg4AVHUgqiuxzTqoWnd5isRqcN2/view')"
+        >
+          DOWNLOAD
+        </button>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function openModal(modalId) {
+        var modal = document.getElementById(modalId);
+        modal.style.display = "block";
+      }
+
+      function closeModal(modalId) {
+        var modal = document.getElementById(modalId);
+        modal.style.display = "none";
+      }
+
+      window.onclick = function (event) {
+        var modals = document.getElementsByClassName("modal");
+        for (var i = 0; i < modals.length; i++) {
+          var modal = modals[i];
+          if (event.target === modal) {
+            modal.style.display = "none";
+          }
+        }
+      };
+    </script>
+  </body>
+</html>
